@@ -1,38 +1,89 @@
-.App {
+.container {
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Calibri;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.popup {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  background-color: lightseagreen;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+input, button {
+  width: 300px;
+  height: 50px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  text-align:center;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button {
+  margin-bottom: 22px;
+}
+
+.step {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.helperText {
+  height: 12px;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.imgWrapper, .imgWrapperStart{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+.imgWrapperStart {
+  margin-bottom: 40px;
+}
+
+.img {
+  width: 100%;
+}
+
+ol {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 500px) {
+  .popup {
+    width: 90%;
+    margin: 0 auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  input, button {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  input, button {
+    width: 80%;
   }
 }
